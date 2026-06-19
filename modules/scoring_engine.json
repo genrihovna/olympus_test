@@ -1,0 +1,23 @@
+{
+  "scoring_rules": {
+    "top_archetype": "max_score",
+    "second_and_third": "top_2_and_3_scores",
+    "hero_mode": "highest_among_heroes",
+    "shadow_excess": "derived_from_top_archetype_shadow_excess",
+    "shadow_deficit": "lowest_score_archetype",
+    "hero_archetypes": [
+      "achilles",
+      "perseus",
+      "jason",
+      "odysseus",
+      "daedalus",
+      "prometheus",
+      "orpheus",
+      "penelope",
+      "antigone",
+      "medea",
+      "icarus",
+      "hephaestus"
+    ]
+  }
+}

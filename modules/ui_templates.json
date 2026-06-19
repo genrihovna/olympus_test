@@ -1,0 +1,33 @@
+{
+  "output": {
+    "structure": {
+      "ruler": {
+        "source": "top_archetype",
+        "template": "В твоём внутреннем Олимпе правит {archetype.name}. {archetype.essence}."
+      },
+      "council": {
+        "source": "second_and_third",
+        "template": "Твой Совет формируют {archetype_2.name} и {archetype_3.name}. Они определяют твой стиль взаимодействия с миром."
+      },
+      "hero": {
+        "source": "highest_among_heroes",
+        "template": "Твой геройский путь ведёт {hero.name}: {hero.gift}."
+      },
+      "shadow_excess": {
+        "source": "top_archetype.shadow_excess",
+        "template": "В избытке {top_archetype.name} превращается в {shadow}. Это момент искажения твоей силы."
+      },
+      "shadow_deficit": {
+        "source": "lowest_archetype",
+        "template": "В твоей системе почти не проявлен {archetype.name}. Это создаёт слепые зоны в восприятии мира."
+      }
+    },
+    "meta": {
+      "title": "Mythic Olympus Personality Test",
+      "start_subtitle": "Оракул Олимпа готов открыть твой внутренний пантеон.",
+      "start_button": "Начать тест",
+      "result_title": "Oracle Reading",
+      "restart_button": "Пройти снова"
+    }
+  }
+}
