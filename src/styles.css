@@ -42,6 +42,36 @@ body {
   width: min(840px, 100%);
 }
 
+.language-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.language-switcher span {
+  color: #e8d8ad;
+  opacity: 0.9;
+  font-size: 1.05rem;
+}
+
+.language-btn {
+  border: 1px solid rgba(217, 182, 108, 0.6);
+  background: rgba(22, 17, 35, 0.9);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-family: "Cinzel", serif;
+}
+
+.language-btn.active {
+  border-color: #f1ce79;
+  box-shadow: 0 0 12px rgba(217, 182, 108, 0.35);
+}
+
 h1,
 h2 {
   margin: 0 0 20px;
@@ -75,13 +105,56 @@ h2 {
   font-size: 1.2rem;
 }
 
+.summary-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.status-pill {
+  border: 1px solid rgba(217, 182, 108, 0.5);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.95rem;
+}
+
+.status-pill.answered {
+  border-color: rgba(96, 208, 145, 0.8);
+}
+
+.status-pill.skipped {
+  border-color: rgba(231, 170, 92, 0.9);
+}
+
+.status-pill.not-visited {
+  border-color: rgba(170, 170, 190, 0.8);
+}
+
 .answers {
   display: grid;
   gap: 12px;
   margin-top: 20px;
 }
 
+.question-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.question-jump-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.jump-btn,
 .answer-btn,
+.secondary-btn,
 .cta {
   border: 1px solid rgba(217, 182, 108, 0.6);
   background: linear-gradient(180deg, rgba(39, 29, 54, 0.95), rgba(25, 18, 40, 0.95));
@@ -95,7 +168,15 @@ h2 {
   transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
 }
 
+.jump-btn {
+  text-align: center;
+  font-size: 1rem;
+  padding: 9px 8px;
+}
+
 .answer-btn:hover,
+.secondary-btn:hover,
+.jump-btn:hover,
 .cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 28px rgba(217, 182, 108, 0.35);
@@ -113,6 +194,39 @@ h2 {
   font-family: "Cinzel", serif;
 }
 
+.answer-btn.selected,
+.jump-btn.active {
+  border-color: #f1ce79;
+  box-shadow: 0 0 20px rgba(217, 182, 108, 0.4);
+}
+
+.jump-btn.answered {
+  border-color: rgba(96, 208, 145, 0.8);
+}
+
+.jump-btn.skipped {
+  border-color: rgba(231, 170, 92, 0.9);
+}
+
+.jump-btn.ellipsis-btn {
+  min-width: 56px;
+  font-family: "Cinzel", serif;
+}
+
+.all-questions-panel {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.secondary-btn {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
 .cta {
   margin-top: 22px;
   width: 100%;
@@ -128,6 +242,59 @@ h2 {
 .oracle-line {
   margin-top: 16px;
   color: #f2d99a;
+}
+
+.hint-line {
+  margin: 0 0 10px;
+  opacity: 0.85;
+  font-size: 1rem;
+}
+
+.archetype-link {
+  border: none;
+  background: transparent;
+  color: #f4d68e;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 4, 12, 0.7);
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  z-index: 20;
+}
+
+.modal-card {
+  width: min(560px, 100%);
+  background: linear-gradient(180deg, rgba(40, 30, 60, 0.96) 0%, rgba(20, 15, 30, 0.96) 100%);
+  border: 1px solid var(--gold-soft);
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.45);
+}
+
+.modal-card h3 {
+  margin: 0 0 10px;
+  font-family: "Cinzel", serif;
+  color: #f7df9d;
+}
+
+.modal-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.modal-card li {
+  margin-bottom: 7px;
+  line-height: 1.35;
 }
 
 .fade-in {
@@ -154,5 +321,21 @@ h2 {
   .question-card h2,
   .result-card p {
     font-size: 1.2rem;
+  }
+
+  .question-jump-bottom {
+    justify-content: stretch;
+  }
+
+  .question-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .jump-btn {
+    flex: 1 1 100%;
+  }
+
+  .all-questions-panel {
+    grid-template-columns: 1fr;
   }
 }
