@@ -1,0 +1,256 @@
+{
+  "en": {
+    "zeus": {
+      "name": "Zeus",
+      "shadow_excess": "Kronos",
+      "profile": ["Strategic leader who sets direction.", "Takes responsibility for order and decisions.", "Risk: turning leadership into control."]
+    },
+    "hera": {
+      "name": "Hera",
+      "shadow_excess": "Nemesis",
+      "profile": ["Guardian of commitments and structure.", "Builds stable long-term bonds.", "Risk: rigidity and jealousy."]
+    },
+    "athena": {
+      "name": "Athena",
+      "shadow_excess": "Cassandra",
+      "profile": ["Analytical and system-minded.", "Strong in planning and strategy.", "Risk: emotional distance."]
+    },
+    "apollo": {
+      "name": "Apollo",
+      "shadow_excess": "Midas",
+      "profile": ["Brings clarity, form, and discipline.", "Values precision and aesthetics.", "Risk: perfectionism over vitality."]
+    },
+    "hestia": {
+      "name": "Hestia",
+      "shadow_excess": "Narcissus",
+      "profile": ["Inner calm and centered presence.", "Creates safe, grounded space.", "Risk: withdrawal from life."]
+    },
+    "poseidon": {
+      "name": "Poseidon",
+      "shadow_excess": "Typhon",
+      "profile": ["Powerful emotional drive.", "Acts strongly in crisis.", "Risk: impulsive destructiveness."]
+    },
+    "ares": {
+      "name": "Ares",
+      "shadow_excess": "Eris",
+      "profile": ["Direct force and confrontation.", "Courage under pressure.", "Risk: living in constant conflict."]
+    },
+    "achilles": {
+      "name": "Achilles",
+      "shadow_excess": "Agamemnon",
+      "profile": ["High-impact executor.", "Fast, decisive, competitive.", "Risk: dependence on recognition."]
+    },
+    "perseus": {
+      "name": "Perseus",
+      "shadow_excess": "Medusa",
+      "profile": ["Problem solver in hard situations.", "Turns complexity into action.", "Risk: oversimplifying people and context."]
+    },
+    "jason": {
+      "name": "Jason",
+      "shadow_excess": "Medea",
+      "profile": ["Team-oriented project leader.", "Aligns people toward goals.", "Risk: losing personal center."]
+    },
+    "odysseus": {
+      "name": "Odysseus",
+      "shadow_excess": "Sisyphus",
+      "profile": ["Adaptive and tactically smart.", "Finds routes through uncertainty.", "Risk: over-maneuvering."]
+    },
+    "daedalus": {
+      "name": "Daedalus",
+      "shadow_excess": "Icarus",
+      "profile": ["Engineer and architect mindset.", "Designs systems that work.", "Risk: neglecting consequences."]
+    },
+    "prometheus": {
+      "name": "Prometheus",
+      "shadow_excess": "Lucifer",
+      "profile": ["Innovator and knowledge giver.", "Pushes progress for others.", "Risk: imposing 'good' uninvited."]
+    },
+    "cassandra": {
+      "name": "Cassandra",
+      "shadow_excess": "Tiresias",
+      "profile": ["Future-oriented intuition.", "Sees patterns before others.", "Risk: isolation when unheard."]
+    },
+    "hermes": {
+      "name": "Hermes",
+      "shadow_excess": "Pan",
+      "profile": ["Connector, messenger, mediator.", "Moves quickly across contexts.", "Risk: scattering focus."]
+    },
+    "aphrodite": {
+      "name": "Aphrodite",
+      "shadow_excess": "Helen of Troy",
+      "profile": ["Relational magnetism and harmony.", "Brings warmth and attraction.", "Risk: dependence on reflection from others."]
+    },
+    "orpheus": {
+      "name": "Orpheus",
+      "shadow_excess": "Eurydice",
+      "profile": ["Artistic influence and expression.", "Moves people through beauty.", "Risk: getting trapped in loss."]
+    },
+    "penelope": {
+      "name": "Penelope",
+      "shadow_excess": "Clytemnestra",
+      "profile": ["Loyal, steady, resilient.", "Maintains long arcs with patience.", "Risk: waiting too long."]
+    },
+    "antigone": {
+      "name": "Antigone",
+      "shadow_excess": "Creon",
+      "profile": ["Principled moral backbone.", "Stays true under pressure.", "Risk: self-sacrifice to rigidity."]
+    },
+    "medea": {
+      "name": "Medea",
+      "shadow_excess": "Furies",
+      "profile": ["Intense passion and devotion.", "Capable of deep commitment.", "Risk: destructive emotional extremes."]
+    },
+    "hades": {
+      "name": "Hades",
+      "shadow_excess": "Thanatos",
+      "profile": ["Depth, introspection, hidden layers.", "Sees what is beneath surface.", "Risk: social withdrawal."]
+    },
+    "artemis": {
+      "name": "Artemis",
+      "shadow_excess": "Iphigenia",
+      "profile": ["Independent and self-directed.", "Strong personal boundaries.", "Risk: over-isolation."]
+    },
+    "icarus": {
+      "name": "Icarus",
+      "shadow_excess": "Phaethon",
+      "profile": ["Explorer beyond limits.", "Bold in experimentation.", "Risk: underestimating constraints."]
+    },
+    "hephaestus": {
+      "name": "Hephaestus",
+      "shadow_excess": "Prometheus",
+      "profile": ["Craft, mastery, persistence.", "Builds through disciplined effort.", "Risk: hiding own value."]
+    },
+    "dionysus": {
+      "name": "Dionysus",
+      "shadow_excess": "Satyrs",
+      "profile": ["Flow, spontaneity, aliveness.", "Opens access to emotion and joy.", "Risk: losing boundaries."]
+    }
+  },
+  "lv": {
+    "zeus": {
+      "name": "Zeuss",
+      "shadow_excess": "Kronoss",
+      "profile": ["Stratēģisks līderis ar virzienu.", "Uzņemas atbildību par kārtību.", "Risks: kontrole var aizstāt vadību."]
+    },
+    "hera": {
+      "name": "Hēra",
+      "shadow_excess": "Nēmesis",
+      "profile": ["Saistību un struktūras sargātāja.", "Veido stabilas ilgtermiņa saites.", "Risks: stīvums un greizsirdība."]
+    },
+    "athena": {
+      "name": "Atēna",
+      "shadow_excess": "Kasandra",
+      "profile": ["Analītiska un sistēmiska domāšana.", "Spēcīga plānošanā un stratēģijā.", "Risks: emocionāla distance."]
+    },
+    "apollo": {
+      "name": "Apollons",
+      "shadow_excess": "Mīdass",
+      "profile": ["Ienes skaidrību un disciplīnu.", "Novērtē formu un precizitāti.", "Risks: perfekcionisms pāri dzīvīgumam."]
+    },
+    "hestia": {
+      "name": "Hēstija",
+      "shadow_excess": "Narciss",
+      "profile": ["Iekšējs miers un centrs.", "Rada drošu un stabilu telpu.", "Risks: attālināšanās no dzīves."]
+    },
+    "poseidon": {
+      "name": "Poseidons",
+      "shadow_excess": "Tifons",
+      "profile": ["Spēcīgs emocionāls dzinējs.", "Krīzē rīkojas enerģiski.", "Risks: impulsīva destruktivitāte."]
+    },
+    "ares": {
+      "name": "Aress",
+      "shadow_excess": "Erīda",
+      "profile": ["Tiešs spēks un konfrontācija.", "Drosme spiediena apstākļos.", "Risks: dzīve nepārtrauktā konfliktā."]
+    },
+    "achilles": {
+      "name": "Ahillejs",
+      "shadow_excess": "Agamemnons",
+      "profile": ["Ļoti efektīvs izpildītājs.", "Ātrs, izlēmīgs, sacensību gars.", "Risks: atkarība no atzinības."]
+    },
+    "perseus": {
+      "name": "Persejs",
+      "shadow_excess": "Medūza",
+      "profile": ["Sarežģītu uzdevumu risinātājs.", "Pārvērš sarežģīto darbībā.", "Risks: pārlieka vienkāršošana."]
+    },
+    "jason": {
+      "name": "Jāsons",
+      "shadow_excess": "Mēdeja",
+      "profile": ["Komandas projektu līderis.", "Saliedē cilvēkus mērķim.", "Risks: pazaudēt savu centru."]
+    },
+    "odysseus": {
+      "name": "Odisejs",
+      "shadow_excess": "Sīsifs",
+      "profile": ["Elastīgs un taktisks prāts.", "Atrod ceļu nenoteiktībā.", "Risks: pārlieka manevrēšana."]
+    },
+    "daedalus": {
+      "name": "Daidals",
+      "shadow_excess": "Ikars",
+      "profile": ["Inženiera un arhitekta domāšana.", "Veido sistēmas, kas strādā.", "Risks: neredzēt sekas."]
+    },
+    "prometheus": {
+      "name": "Prometejs",
+      "shadow_excess": "Lucifers",
+      "profile": ["Inovators un zināšanu nesējs.", "Virza progresu sabiedrībai.", "Risks: uzspiest savu 'labumu'."]
+    },
+    "cassandra": {
+      "name": "Kasandra",
+      "shadow_excess": "Tiresijs",
+      "profile": ["Nākotnes intuīcija un paredze.", "Redz modeļus agrāk par citiem.", "Risks: izolācija, ja nesadzird."]
+    },
+    "hermes": {
+      "name": "Hērmess",
+      "shadow_excess": "Pāns",
+      "profile": ["Savienotājs un starpnieks.", "Ātri pārvietojas starp kontekstiem.", "Risks: izkliedēts fokuss."]
+    },
+    "aphrodite": {
+      "name": "Afrodīte",
+      "shadow_excess": "Helēna no Trojas",
+      "profile": ["Pievilkšanās un attiecību harmonija.", "Nes siltumu un iedvesmu.", "Risks: atkarība no citu vērtējuma."]
+    },
+    "orpheus": {
+      "name": "Orfejs",
+      "shadow_excess": "Eiridīke",
+      "profile": ["Mākslinieciska ietekme.", "Aizkustina caur skaistumu.", "Risks: iestrēgt zaudējumā."]
+    },
+    "penelope": {
+      "name": "Penelope",
+      "shadow_excess": "Klitēmnestra",
+      "profile": ["Uzticība un noturība.", "Pacietīgi uztur ilgus procesus.", "Risks: pārāk ilga gaidīšana."]
+    },
+    "antigone": {
+      "name": "Antigone",
+      "shadow_excess": "Kreonts",
+      "profile": ["Stingra morālā ass.", "Paliek uzticīga sev spiedienā.", "Risks: pašupuris stīvuma dēļ."]
+    },
+    "medea": {
+      "name": "Mēdeja",
+      "shadow_excess": "Fūrijas",
+      "profile": ["Intensīva kaisle un uzticība.", "Spēj uz dziļu saikni.", "Risks: destruktīvas emociju galējības."]
+    },
+    "hades": {
+      "name": "Aīds",
+      "shadow_excess": "Tanatoss",
+      "profile": ["Dziļums un introspekcija.", "Saredz apslēpto būtību.", "Risks: sociāla noslēgtība."]
+    },
+    "artemis": {
+      "name": "Artemīda",
+      "shadow_excess": "Ifigēnija",
+      "profile": ["Neatkarība un autonomija.", "Spēcīgas personīgās robežas.", "Risks: pārmērīga norobežošanās."]
+    },
+    "icarus": {
+      "name": "Ikars",
+      "shadow_excess": "Faetons",
+      "profile": ["Robežu pētnieks un eksperimentētājs.", "Drosme mēģināt jauno.", "Risks: nenovērtēt ierobežojumus."]
+    },
+    "hephaestus": {
+      "name": "Hēfaists",
+      "shadow_excess": "Prometejs",
+      "profile": ["Amats, meistarība, neatlaidība.", "Būvē ar disciplinētu darbu.", "Risks: nenovērtēt savu vērtību."]
+    },
+    "dionysus": {
+      "name": "Dionīss",
+      "shadow_excess": "Sātiri",
+      "profile": ["Plūsma, spontanitāte, dzīves gars.", "Atver pieeju emocijām un priekam.", "Risks: robežu zudums."]
+    }
+  }
+}

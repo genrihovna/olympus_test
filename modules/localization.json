@@ -1,0 +1,580 @@
+{
+  "languages": {
+    "ru": "Русский",
+    "en": "English",
+    "lv": "Latviešu"
+  },
+  "ui": {
+    "ru": {
+      "language_label": "Язык:",
+      "title": "Тест личности: Олимп",
+      "start_subtitle": "Оракул Олимпа готов открыть твой внутренний пантеон.",
+      "start_button": "Начать тест",
+      "progress_label": "Вопрос",
+      "answered_label": "Отвечено",
+      "skipped_label": "Пропущено",
+      "not_visited_label": "Не открыто",
+      "next_unanswered_button": "К следующему неотвеченному",
+      "review_button": "Показать все вопросы",
+      "show_result_button": "Показать результат",
+      "review_title": "Проверка перед результатом",
+      "review_subtitle": "Выберите вопрос, чтобы ответить или изменить ответ.",
+      "go_first_unanswered_button": "Перейти к первому неотвеченному",
+      "back_to_questions_button": "Вернуться к вопросам",
+      "finish_anyway_button": "Завершить с текущими ответами",
+      "archetype_hint": "Нажмите на имя архетипа, чтобы увидеть краткое описание.",
+      "close_button": "Закрыть",
+      "result_title": "Чтение Оракула",
+      "ruler_label": "Правитель:",
+      "council_label": "Совет:",
+      "hero_label": "Герой:",
+      "shadow_excess_label": "Избыток тени:",
+      "shadow_deficit_label": "Недостаток тени:",
+      "restart_button": "Пройти снова"
+    },
+    "en": {
+      "language_label": "Language:",
+      "title": "Personality Test: Olympus",
+      "start_subtitle": "The Oracle of Olympus is ready to reveal your inner pantheon.",
+      "start_button": "Start test",
+      "progress_label": "Question",
+      "answered_label": "Answered",
+      "skipped_label": "Skipped",
+      "not_visited_label": "Not visited",
+      "next_unanswered_button": "Go to next unanswered",
+      "review_button": "Show all questions",
+      "show_result_button": "Show result",
+      "review_title": "Review before result",
+      "review_subtitle": "Pick a question to answer it or change your choice.",
+      "go_first_unanswered_button": "Go to first unanswered",
+      "back_to_questions_button": "Back to questions",
+      "finish_anyway_button": "Finish with current answers",
+      "archetype_hint": "Click an archetype name to open a short description.",
+      "close_button": "Close",
+      "result_title": "Oracle Reading",
+      "ruler_label": "Ruler:",
+      "council_label": "Council:",
+      "hero_label": "Hero:",
+      "shadow_excess_label": "Shadow Excess:",
+      "shadow_deficit_label": "Shadow Deficit:",
+      "restart_button": "Take again"
+    },
+    "lv": {
+      "language_label": "Valoda:",
+      "title": "Personības tests: Olimps",
+      "start_subtitle": "Olimpa orākuls ir gatavs atklāt tavu iekšējo panteonu.",
+      "start_button": "Sākt testu",
+      "progress_label": "Jautājums",
+      "answered_label": "Atbildēts",
+      "skipped_label": "Izlaists",
+      "not_visited_label": "Nav atvērts",
+      "next_unanswered_button": "Uz nākamo neatbildēto",
+      "review_button": "Rādīt visus jautājumus",
+      "show_result_button": "Rādīt rezultātu",
+      "review_title": "Pārbaude pirms rezultāta",
+      "review_subtitle": "Izvēlies jautājumu, lai atbildētu vai mainītu atbildi.",
+      "go_first_unanswered_button": "Pāriet uz pirmo neatbildēto",
+      "back_to_questions_button": "Atgriezties pie jautājumiem",
+      "finish_anyway_button": "Pabeigt ar pašreizējām atbildēm",
+      "archetype_hint": "Nospied uz arhetipa vārda, lai redzētu īsu aprakstu.",
+      "close_button": "Aizvērt",
+      "result_title": "Orākula lasījums",
+      "ruler_label": "Valdnieks:",
+      "council_label": "Padome:",
+      "hero_label": "Varonis:",
+      "shadow_excess_label": "Ēnas pārpalikums:",
+      "shadow_deficit_label": "Ēnas deficīts:",
+      "restart_button": "Iziet vēlreiz"
+    }
+  },
+  "structure_templates": {
+    "en": {
+      "ruler": "In your inner Olympus, {archetype.name} rules.",
+      "council": "Your Council is formed by {archetype_2.name} and {archetype_3.name}. They shape your interaction with the world.",
+      "hero": "Your heroic path is led by {hero.name}.",
+      "shadow_excess": "In excess, {top_archetype.name} turns into {shadow}. This is the distortion point of your strength.",
+      "shadow_deficit": "{archetype.name} is barely expressed in your system. This creates blind spots in your perception of the world."
+    },
+    "lv": {
+      "ruler": "Tavā iekšējā Olimpā valda {archetype.name}.",
+      "council": "Tavu padomi veido {archetype_2.name} un {archetype_3.name}. Viņi nosaka tavu mijiedarbību ar pasauli.",
+      "hero": "Tavu varoņa ceļu vada {hero.name}.",
+      "shadow_excess": "Pārspīlējumā {top_archetype.name} pārvēršas par {shadow}. Tas ir tavas spēka izkropļojuma punkts.",
+      "shadow_deficit": "{archetype.name} tavā sistēmā gandrīz neizpaužas. Tas rada aklās zonas pasaules uztverē."
+    }
+  },
+  "question_labels": {
+    "ru": {
+      "storm_poseidon": "Буря Посейдона",
+      "gift_hermes": "Дар Гермеса",
+      "cave_hades": "Пещера Аида",
+      "judgement_athena": "Суд Афины",
+      "sirens_temptation": "Сирены",
+      "forge_hephaestus": "Кузня Гефеста",
+      "apple_discord": "Яблоко раздора",
+      "voice_cassandra": "Голос Кассандры",
+      "flight_icarus": "Полет Икара",
+      "return_odysseus": "Возвращение Одиссея",
+      "throne_olympus": "Трон Олимпа",
+      "choice_fate": "Выбор судьбы",
+      "labyrinth_daedalus": "Лабиринт Дедала",
+      "underworld_silence": "Молчание подземного мира",
+      "argonauts_campaign": "Поход Аргонавтов",
+      "song_orpheus": "Песнь Орфея",
+      "fire_prometheus": "Огонь Прометея",
+      "wings_icarus": "Крылья Икара",
+      "shadow_achilles": "Тень Ахилла",
+      "last_choice_moirai": "Последний выбор Мойр"
+    },
+    "en": {
+      "storm_poseidon": "Poseidon's Storm",
+      "gift_hermes": "Hermes' Gift",
+      "cave_hades": "Hades' Cave",
+      "judgement_athena": "Athena's Judgment",
+      "sirens_temptation": "Sirens' Temptation",
+      "forge_hephaestus": "Hephaestus' Forge",
+      "apple_discord": "Apple of Discord",
+      "voice_cassandra": "Cassandra's Voice",
+      "flight_icarus": "Icarus Flight",
+      "return_odysseus": "Odysseus Returns",
+      "throne_olympus": "Olympus Throne",
+      "choice_fate": "Choice of Fate",
+      "labyrinth_daedalus": "Daedalus Labyrinth",
+      "underworld_silence": "Underworld Silence",
+      "argonauts_campaign": "Argonauts Campaign",
+      "song_orpheus": "Orpheus Song",
+      "fire_prometheus": "Prometheus Fire",
+      "wings_icarus": "Icarus Wings",
+      "shadow_achilles": "Achilles' Shadow",
+      "last_choice_moirai": "Moirai's Last Choice"
+    },
+    "lv": {
+      "storm_poseidon": "Poseidona vētra",
+      "gift_hermes": "Hērmesa dāvana",
+      "cave_hades": "Aīda ala",
+      "judgement_athena": "Atēnas spriedums",
+      "sirens_temptation": "Sirēnu kārdinājums",
+      "forge_hephaestus": "Hēfaista kalve",
+      "apple_discord": "Nesaskaņu ābols",
+      "voice_cassandra": "Kasandras balss",
+      "flight_icarus": "Ikara lidojums",
+      "return_odysseus": "Odiseja atgriešanās",
+      "throne_olympus": "Olimpa tronis",
+      "choice_fate": "Likteņa izvēle",
+      "labyrinth_daedalus": "Daidala labirints",
+      "underworld_silence": "Pazemes klusums",
+      "argonauts_campaign": "Argonautu gājiens",
+      "song_orpheus": "Orfeja dziesma",
+      "fire_prometheus": "Prometeja uguns",
+      "wings_icarus": "Ikara spārni",
+      "shadow_achilles": "Ahilleja ēna",
+      "last_choice_moirai": "Moiru pēdējā izvēle"
+    }
+  },
+  "questions": {
+    "en": {
+      "storm_poseidon": {
+        "text": "Your ship is caught in a storm. The wind tears the sails, and the crew is losing control. What do you do?",
+        "answers": {
+          "A": "Take the helm and give clear commands",
+          "B": "Try to understand the storm's pattern and behavior",
+          "C": "Climb the rigging and act first",
+          "D": "Calm people down",
+          "E": "Observe and analyze"
+        }
+      },
+      "gift_hermes": {
+        "text": "At a crossroads, Hermes is waiting for you. He offers one gift, and you can choose only one. What do you choose?",
+        "answers": {
+          "A": "Power to influence other people's decisions",
+          "B": "Understanding the hidden causes of things",
+          "C": "Freedom to go anywhere and change your path at any moment",
+          "D": "The gift of inspiring hearts",
+          "E": "The ability to see the future"
+        }
+      },
+      "cave_hades": {
+        "text": "You enter the underworld. Before you is knowledge that can change your life, but the price may be high. What do you choose?",
+        "answers": {
+          "A": "Learn the truth at any cost",
+          "B": "Do not enter, not every truth is needed",
+          "C": "Try to get the knowledge by indirect means",
+          "D": "Take companions and go together",
+          "E": "First find out who created this trial and why"
+        }
+      },
+      "judgement_athena": {
+        "text": "The city is split in two. Each side is sure it is right. You are asked to decide. What do you rely on?",
+        "answers": {
+          "A": "Law. The rule must be the same for everyone",
+          "B": "Justice. Context matters",
+          "C": "Benefit for the future, what it will lead to",
+          "D": "Peace between people, don't destroy relationships",
+          "E": "Everyone's right to walk their own path"
+        }
+      },
+      "sirens_temptation": {
+        "text": "The Sirens offer you knowledge, power, and wish fulfillment. But in return you must give up one part of yourself. What will you give up?",
+        "answers": {
+          "A": "Power",
+          "B": "Safety",
+          "C": "Love",
+          "D": "Fame",
+          "E": "Knowledge"
+        }
+      },
+      "forge_hephaestus": {
+        "text": "Hephaestus offers you to forge a weapon or tool that will make you one of the most influential people of the era. But no one may know it was you. What do you answer?",
+        "answers": {
+          "A": "Agree without conditions",
+          "B": "Refuse",
+          "C": "Try to change the conditions",
+          "D": "Ask who this will truly help",
+          "E": "Ask what price will have to be paid"
+        }
+      },
+      "apple_discord": {
+        "text": "A golden apple falls on the table. It says: 'to the worthiest'. Tension rises in the room, everyone feels it is about them. What do you do?",
+        "answers": {
+          "A": "Take it",
+          "B": "Give it to the one who seems most worthy",
+          "C": "Destroy the apple",
+          "D": "Arrange a contest",
+          "E": "Ask who decided it must belong to anyone"
+        }
+      },
+      "voice_cassandra": {
+        "text": "You know for sure that a serious disaster is coming, but no one believes you. What do you do?",
+        "answers": {
+          "A": "Keep persuading no matter what",
+          "B": "Prepare on your own",
+          "C": "Use any means to make people hear me",
+          "D": "Accept that no one will listen",
+          "E": "Try to understand why people cannot hear it"
+        }
+      },
+      "flight_icarus": {
+        "text": "You are given a chance to go beyond the familiar world. The opportunity is huge, but so is the risk. What do you choose?",
+        "answers": {
+          "A": "Fly",
+          "B": "Prepare as much as possible first",
+          "C": "Refuse, it is too dangerous",
+          "D": "Try to delegate or send someone else",
+          "E": "Find a third way, neither risk nor refusal"
+        }
+      },
+      "return_odysseus": {
+        "text": "You return home after a long journey. Everything familiar seems changed. Ahead is one more choice: stay safe or go further for knowledge that may change everything. What do you choose?",
+        "answers": {
+          "A": "Home, I return to family and familiar life",
+          "B": "The mystery, I continue the journey into the unknown",
+          "C": "Try to combine both paths",
+          "D": "Let fate decide",
+          "E": "First see who exactly is waiting at home"
+        }
+      },
+      "throne_olympus": {
+        "text": "The gods offer you a place among them. It means power, influence, and responsibility. What is your first thought?",
+        "answers": {
+          "A": "At last, I can change the world",
+          "B": "What obligations does this impose?",
+          "C": "Will I be able to keep my freedom?",
+          "D": "What will happen to people if I accept?",
+          "E": "Why me?"
+        }
+      },
+      "choice_fate": {
+        "text": "The three Moirai offer you threads of fate. You can choose only one, and there is no way back. What do you choose?",
+        "answers": {
+          "A": "Great glory",
+          "B": "Great wisdom",
+          "C": "Great love",
+          "D": "Great freedom",
+          "E": "Great understanding"
+        }
+      },
+      "labyrinth_daedalus": {
+        "text": "You are inside a labyrinth built by a great master. There is an exit, but the structure is complex and changing. What do you do?",
+        "answers": {
+          "A": "Study the labyrinth structure and rules",
+          "B": "Look for weak points and detours",
+          "C": "Try to understand the creator's intent",
+          "D": "Use everything around as a tool on the go",
+          "E": "Stop and ask why to seek an exit at all"
+        }
+      },
+      "underworld_silence": {
+        "text": "You are in Hades' realm. You receive knowledge that explains much about your life and people around you, but this truth is hard to live with. What do you do?",
+        "answers": {
+          "A": "Tell everyone the truth",
+          "B": "Keep the knowledge to myself",
+          "C": "Use the knowledge carefully",
+          "D": "Try to change events using it",
+          "E": "Study the consequences of this truth becoming known"
+        }
+      },
+      "argonauts_campaign": {
+        "text": "You lead an important joint expedition. The team is strong, but everyone has their own opinion and disputes begin. How do you act?",
+        "answers": {
+          "A": "Make the decision myself",
+          "B": "Gather a council and hear everyone out",
+          "C": "Assign roles based on abilities",
+          "D": "Remind everyone of the main goal",
+          "E": "Strictly demand discipline"
+        }
+      },
+      "song_orpheus": {
+        "text": "You must influence a person who is closed off and does not hear you. Direct words do not work. How do you act?",
+        "answers": {
+          "A": "Tell a story or create an image that touches them",
+          "B": "Show care through actions",
+          "C": "Understand their pain and state, then start dialogue",
+          "D": "Create an atmosphere of beauty and meaning around them",
+          "E": "Step back and do not interfere"
+        }
+      },
+      "fire_prometheus": {
+        "text": "You are given great knowledge that can change society. But there is a risk: people may use it differently than you expect. What do you do?",
+        "answers": {
+          "A": "Give the knowledge to people",
+          "B": "Check consequences and safety",
+          "C": "Keep the knowledge for the chosen few",
+          "D": "Use it personally",
+          "E": "Ask whether people are ready for such knowledge"
+        }
+      },
+      "wings_icarus": {
+        "text": "You get a chance to go beyond the known world and try what no one has done before. But there is no guarantee you return the same. What do you choose?",
+        "answers": {
+          "A": "Set off immediately",
+          "B": "Study maps and prepare",
+          "C": "Refuse, too dangerous",
+          "D": "Take companions or delegate the risk",
+          "E": "Invent another way, less risky but still innovative"
+        }
+      },
+      "shadow_achilles": {
+        "text": "You are publicly underestimated and humiliated. How do you react?",
+        "answers": {
+          "A": "Respond immediately and harshly",
+          "B": "Wait for the right moment and respond later",
+          "C": "Outperform the offender through action, not words",
+          "D": "Analyze why this hurt me",
+          "E": "Pretend it does not matter"
+        }
+      },
+      "last_choice_moirai": {
+        "text": "The three Moirai stand before you and ask what people should remember about you in a thousand years.",
+        "answers": {
+          "A": "I changed the world",
+          "B": "I understood the world and how it works",
+          "C": "I loved and was truly close to people",
+          "D": "I was free and nothing limited my path",
+          "E": "I lived my destiny and saw deep meaning in what happened"
+        }
+      }
+    },
+    "lv": {
+      "storm_poseidon": {
+        "text": "Tavs kuģis nonācis vētrā. Vējš plēš buras, komanda zaudē kontroli. Ko tu dari?",
+        "answers": {
+          "A": "Pārņemu stūri un dodu skaidras komandas",
+          "B": "Mēģinu saprast vētras likumsakarības un uzvedību",
+          "C": "Kāpju takelāžā un rīkojos pirmais",
+          "D": "Nomierinu cilvēkus",
+          "E": "Vēroju un analizēju"
+        }
+      },
+      "gift_hermes": {
+        "text": "Ceļu krustojumā tevi gaida Hērmess. Viņš piedāvā vienu dāvanu, un izvēlēties var tikai vienu. Ko tu izvēlies?",
+        "answers": {
+          "A": "Varu ietekmēt citu lēmumus",
+          "B": "Izpratni par lietu slēptajiem cēloņiem",
+          "C": "Brīvību iet jebkur un jebkurā brīdī mainīt ceļu",
+          "D": "Dāvanu iedvesmot sirdis",
+          "E": "Spēju redzēt nākotni"
+        }
+      },
+      "cave_hades": {
+        "text": "Tu ieej pazemes valstībā. Tavā priekšā ir zināšanas, kas var mainīt tavu dzīvi, bet cena var būt augsta. Ko tu izvēlies?",
+        "answers": {
+          "A": "Uzzināt patiesību par jebkuru cenu",
+          "B": "Neiet iekšā, ne katra patiesība ir vajadzīga",
+          "C": "Mēģināt iegūt zināšanas netiešā ceļā",
+          "D": "Ņemt līdzi sabiedrotos un iet kopā",
+          "E": "Vispirms noskaidrot, kas un kāpēc šo pārbaudījumu radīja"
+        }
+      },
+      "judgement_athena": {
+        "text": "Pilsēta sadalījusies divās pusēs. Katra ir pārliecināta par savu taisnību. Tevi lūdz pieņemt lēmumu. Uz ko tu balsties?",
+        "answers": {
+          "A": "Likums. Noteikumam jābūt vienādam visiem",
+          "B": "Taisnīgums. Konteksts ir svarīgs",
+          "C": "Ieguvums nākotnē, pie kā tas novedīs",
+          "D": "Miers starp cilvēkiem, galvenais nesagraut attiecības",
+          "E": "Ikviena tiesības iet savu ceļu"
+        }
+      },
+      "sirens_temptation": {
+        "text": "Sirēnas piedāvā tev zināšanas, spēku un vēlmju piepildījumu. Pretī jāatsakās no vienas savas daļas. No kā tu atteiksies?",
+        "answers": {
+          "A": "No varas",
+          "B": "No drošības",
+          "C": "No mīlestības",
+          "D": "No slavas",
+          "E": "No zināšanām"
+        }
+      },
+      "forge_hephaestus": {
+        "text": "Hēfaists piedāvā izveidot ieroci vai rīku, kas tevi padarīs par vienu no ietekmīgākajiem cilvēkiem laikmetā. Nosacījums: neviens nedrīkst zināt, ka tas biji tu. Ko atbildi?",
+        "answers": {
+          "A": "Piekrītu bez nosacījumiem",
+          "B": "Atsakos",
+          "C": "Mēģinu mainīt nosacījumus",
+          "D": "Jautāju, kam tas patiešām palīdzēs",
+          "E": "Jautāju, kāda būs cena"
+        }
+      },
+      "apple_discord": {
+        "text": "Uz galda nokrīt zelta ābols ar uzrakstu: 'viscienīgākajam'. Telpā rodas spriedze, katrs jūt, ka tas ir par viņu. Ko tu dari?",
+        "answers": {
+          "A": "Paņemu to",
+          "B": "Atdodu tam, kurš šķiet viscienīgākais",
+          "C": "Iznīcinu ābolu",
+          "D": "Sarīkoju sacensību",
+          "E": "Jautāju, kas vispār nolēma, ka tam jābūt kādam"
+        }
+      },
+      "voice_cassandra": {
+        "text": "Tu droši zini, ka tuvākajā laikā notiks nopietna nelaime, bet tev netic. Ko tu dari?",
+        "answers": {
+          "A": "Turpinu pārliecināt par spīti visam",
+          "B": "Sagatavojos patstāvīgi",
+          "C": "Izmantoju visus līdzekļus, lai mani sadzirdētu",
+          "D": "Samierinos, ka mani nesadzirdēs",
+          "E": "Mēģinu saprast, kāpēc cilvēki to nespēj sadzirdēt"
+        }
+      },
+      "flight_icarus": {
+        "text": "Tev dod iespēju iziet ārpus ierastās pasaules. Iespēja ir milzīga, bet risks arī. Ko tu izvēlies?",
+        "answers": {
+          "A": "Lidot",
+          "B": "Vispirms maksimāli sagatavoties",
+          "C": "Atteikties, tas ir pārāk bīstami",
+          "D": "Mēģinu deleģēt vai sūtīt citu",
+          "E": "Atrast trešo ceļu, ne risku un ne atteikšanos"
+        }
+      },
+      "return_odysseus": {
+        "text": "Tu atgriezies mājās pēc gara ceļa. Viss pazīstamais šķiet mainījies. Priekšā vēl viena izvēle: palikt drošībā vai iet tālāk pēc zināšanām, kas var visu mainīt. Ko tu izvēlies?",
+        "answers": {
+          "A": "Mājas, atgriežos pie ģimenes un ierastās dzīves",
+          "B": "Noslēpumu, turpinu ceļu nezināmajā",
+          "C": "Mēģinu apvienot abus ceļus",
+          "D": "Lai izlemj liktenis",
+          "E": "Vispirms skatos, kurš tieši gaida mājās"
+        }
+      },
+      "throne_olympus": {
+        "text": "Dievi piedāvā tev vietu viņu vidū. Tā ir vara, ietekme un atbildība. Kāda ir tava pirmā doma?",
+        "answers": {
+          "A": "Beidzot varu mainīt pasauli",
+          "B": "Kādi pienākumi tam seko?",
+          "C": "Vai spēšu saglabāt brīvību?",
+          "D": "Kas notiks ar cilvēkiem, ja pieņemšu?",
+          "E": "Kāpēc tieši es?"
+        }
+      },
+      "choice_fate": {
+        "text": "Trīs Moiras sniedz tev likteņa pavedienus. Izvēlēties var tikai vienu, atpakaļceļa nebūs. Ko izvēlies?",
+        "answers": {
+          "A": "Lielu slavu",
+          "B": "Lielu gudrību",
+          "C": "Lielu mīlestību",
+          "D": "Lielu brīvību",
+          "E": "Lielu izpratni"
+        }
+      },
+      "labyrinth_daedalus": {
+        "text": "Tu esi labirintā, ko radījis liels meistars. Izeja ir, bet struktūra ir sarežģīta un mainīga. Ko tu dari?",
+        "answers": {
+          "A": "Pētu labirinta struktūru un noteikumus",
+          "B": "Meklēju vājās vietas un apkārtceļus",
+          "C": "Mēģinu saprast radītāja ieceri",
+          "D": "Izmantoju visu apkārtējo kā rīku uz vietas",
+          "E": "Apstājos un jautāju, kāpēc vispār meklēt izeju"
+        }
+      },
+      "underworld_silence": {
+        "text": "Tu esi Aīda valstībā. Tur atklājas zināšanas, kas daudz ko izskaidro tavā dzīvē un cilvēkos apkārt. Bet ar šo patiesību ir grūti dzīvot. Ko tu dari?",
+        "answers": {
+          "A": "Saku patiesību visiem",
+          "B": "Paturu zināšanas pie sevis",
+          "C": "Lietoju zināšanas piesardzīgi",
+          "D": "Mēģinu ar tām mainīt notikumu gaitu",
+          "E": "Pētu sekas tam, ka šī patiesība kļūst zināma"
+        }
+      },
+      "argonauts_campaign": {
+        "text": "Tu vadi svarīgu kopīgu gājienu. Komanda ir spēcīga, bet katram ir savs viedoklis un sākas strīdi. Kā tu rīkojies?",
+        "answers": {
+          "A": "Pieņemu lēmumu pats",
+          "B": "Sasaucu padomi un uzklausu visus",
+          "C": "Sadalu lomas pēc spējām",
+          "D": "Atgādinu visiem galveno mērķi",
+          "E": "Stingri pieprasu disciplīnu"
+        }
+      },
+      "song_orpheus": {
+        "text": "Tev jāietekmē cilvēks, kurš ir noslēgts un tevi nedzird. Tieši vārdi nestrādā. Kā tu rīkojies?",
+        "answers": {
+          "A": "Pastāstu stāstu vai radu tēlu, kas viņu aizkustinās",
+          "B": "Parādu rūpes ar darbiem",
+          "C": "Saproti viņa sāpes un stāvokli, un no tā sāc dialogu",
+          "D": "Radu ap viņu skaistuma un jēgas atmosfēru",
+          "E": "Atkāpjos un neiejaucos"
+        }
+      },
+      "fire_prometheus": {
+        "text": "Tev atklātas lielas zināšanas, kas var mainīt sabiedrību. Bet ir risks: cilvēki var tās izmantot ne tā, kā tu gaidi. Ko tu dari?",
+        "answers": {
+          "A": "Nodu zināšanas cilvēkiem",
+          "B": "Pārbaudu sekas un drošību",
+          "C": "Paturu zināšanas izredzētajiem",
+          "D": "Izmantoju tās personīgi",
+          "E": "Jautāju, vai cilvēki ir gatavi šādām zināšanām"
+        }
+      },
+      "wings_icarus": {
+        "text": "Tev paveras iespēja iziet ārpus zināmās pasaules un izmēģināt to, ko vēl neviens nav darījis. Bet nav garantijas, ka atgriezīsies tāds pats. Ko izvēlies?",
+        "answers": {
+          "A": "Dodos nekavējoties",
+          "B": "Izpētu kartes un sagatavojos",
+          "C": "Atsakos, pārāk bīstami",
+          "D": "Paņemu līdzgaitniekus vai deleģēju risku citiem",
+          "E": "Izdomāju citu veidu, mazāk bīstamu, bet joprojām inovatīvu"
+        }
+      },
+      "shadow_achilles": {
+        "text": "Tevi publiski nenovērtēja un pazemoja. Kā tu reaģē?",
+        "answers": {
+          "A": "Nekavējoties atbildu asi",
+          "B": "Sagaidu brīdi un atbildu vēlāk",
+          "C": "Pārspēju aizvainotāju ar darbiem, ne vārdiem",
+          "D": "Analizēju, kāpēc tas mani aizskāra",
+          "E": "Izliekos, ka tam nav nozīmes"
+        }
+      },
+      "last_choice_moirai": {
+        "text": "Trīs Moiras stāv tavā priekšā un piedāvā izvēlēties, ko par tevi atcerēsies pēc tūkstoš gadiem.",
+        "answers": {
+          "A": "Es izmainīju pasauli",
+          "B": "Es sapratu pasauli un tās uzbūvi",
+          "C": "Es mīlēju un biju patiesi tuvs cilvēkiem",
+          "D": "Es biju brīvs, un nekas neierobežoja manu ceļu",
+          "E": "Es nodzīvoju savu likteni un redzēju dziļu jēgu notiekošajā"
+        }
+      }
+    }
+  }
+}
