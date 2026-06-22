@@ -1,4 +1,4 @@
-import { useMemo, useReducer } from "react";
+import React, { useMemo, useReducer } from "react";
 import archetypesData from "../modules/archetypes.json";
 import questionsData from "../modules/questions.json";
 import scoringData from "../modules/scoring_engine.json";
@@ -164,25 +164,25 @@ export default function App() {
 
         {state.phase === "result" && reading && (
           <section className="card result-card fade-in">
-            <h2>{meta.result_title || "Oracle Reading"}</h2>
+            <h2>{meta.result_title || "Чтение Оракула"}</h2>
             <p className="oracle-line">
-              <strong>Ruler:</strong> {reading.ruler.name}
+              <strong>Правитель:</strong> {reading.ruler.name}
             </p>
             <p>{reading.rulerText}</p>
             <p className="oracle-line">
-              <strong>Council:</strong> {reading.councilSecond.name} + {reading.councilThird.name}
+              <strong>Совет:</strong> {reading.councilSecond.name} + {reading.councilThird.name}
             </p>
             <p>{reading.councilText}</p>
             <p className="oracle-line">
-              <strong>Hero:</strong> {reading.hero.name}
+              <strong>Герой:</strong> {reading.hero.name}
             </p>
             <p>{reading.heroText}</p>
             <p className="oracle-line">
-              <strong>Shadow Excess:</strong> {state.result.shadowExcess}
+              <strong>Избыток тени:</strong> {state.result.shadowExcess}
             </p>
             <p>{reading.shadowExcessText}</p>
             <p className="oracle-line">
-              <strong>Shadow Deficit:</strong> {reading.deficit.name}
+              <strong>Недостаток тени:</strong> {reading.deficit.name}
             </p>
             <p>{reading.shadowDeficitText}</p>
             <button className="cta" onClick={() => dispatch({ type: "RESTART" })}>

@@ -23,10 +23,10 @@
       }
     },
     "meta": {
-      "title": "Mythic Olympus Personality Test",
+      "title": "Тест личности: Олимп",
       "start_subtitle": "Оракул Олимпа готов открыть твой внутренний пантеон.",
       "start_button": "Начать тест",
-      "result_title": "Oracle Reading",
+      "result_title": "Чтение Оракула",
       "restart_button": "Пройти снова"
     }
   }
